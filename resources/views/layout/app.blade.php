@@ -23,13 +23,6 @@
 </head>
 
 <body>
-    <div id="preloader">
-        <video autoplay muted playsinline>
-            <source src="{{ asset('assets/images/preloadinganimation.webm') }}" type="video/webm">
-        </video>
-    </div>
-
-
     @include('layout.header')
 
     @yield('content')
@@ -81,41 +74,4 @@
     @endif
 </script>
 
-<script>
-    let isPageLoaded = false;
-    let isPreloaderHidden = false;
-
-    window.addEventListener('load', function() {
-        isPageLoaded = true;
-        checkPreloader();
-    });
-
-    const preloaderVideo = document.querySelector('#preloader video');
-    preloaderVideo.addEventListener('timeupdate', function() {
-        // Trigger check when video reaches 3 seconds
-        if (preloaderVideo.currentTime >= 3) {
-            checkPreloader();
-        }
-    });
-
-    function checkPreloader() {
-        const preloader = document.getElementById('preloader');
-        
-        if (isPreloaderHidden) return;
-
-        // Hide if the page is loaded AND the video has passed the 3-second mark
-        if (isPageLoaded && preloaderVideo.currentTime >= 3) {
-            isPreloaderHidden = true;
-            preloader.classList.add('fade-out');
-            setTimeout(() => {
-                preloader.style.display = 'none';
-            }, 600);
-        }
-    }
-
-    // Fallback: If the video is shorter than 3 seconds or fails to play
-    preloaderVideo.addEventListener('ended', function() {
-        checkPreloader();
-    });
-</script>
 </html>

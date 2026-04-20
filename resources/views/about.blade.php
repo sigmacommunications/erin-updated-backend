@@ -36,66 +36,32 @@
                     </div>
                 </div>
                 <div class="sec3-inner">
-                    <video class="sec3-bunny-vid" autoplay loop muted playsinline>
-                        <source src="{{ asset('assets/images/animation1.webm') }}" type="video/webm">
-                    </video>
-                    <div class="sec3-head">
-                        <div class="sec3-headings">
-                            <h4 class="purple-head">What Video Learning Looks Like</h4>
-                            <h2 class="black-head">Discover The Difference</h2>
-                        </div>
 
-                        <div class="sec3-btns">
-                            <a href="#" class="vubtn">Video Upload</a>
-                        </div>
-
+                <div class="sec3-head">
+                    <div class="sec3-headings">
+                        <h4 class="purple-head">The Ally Dog Depot Programs</h4>
+                        <h2 class="black-head">A New Way of Learning</h2>
                     </div>
-                    <div class="sec3-body">
-                        <div class="row align-items-center">
-                            <div class="col-md-4">
-                                <div class="vid1">
-                                    <video src="{{ asset('assets/images/dummy_video_test.mp4') }}" controls></video>
-                                    <video src="{{ asset('assets/images/dummy_video_test.mp4') }}" controls></video>
-                                </div>
-                            </div>
-                            <div class="col-md-8">
-                                <div class="vid2">
-                                    <video src="{{ asset('assets/images/dummy_video_test.mp4') }}" controls></video>
-                                </div>
+                </div>
+                <div class="sec3-body">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <div class="vid1">
+                                <video
+                                    src="{{ asset('assets/images/dog-video.mp4') }}"
+                                    controls></video>
                             </div>
                         </div>
-                    </div>
-                    <div class="sec3-body">
-                        <div class="row align-items-center">
-                            <div class="col-md-4">
-                                <div class="vid1">
-                                    <video src="{{ asset('assets/images/dummy_video_test.mp4') }}" controls></video>
-                                    <video src="{{ asset('assets/images/dummy_video_test.mp4') }}" controls></video>
-                                </div>
-                            </div>
-                            <div class="col-md-8">
-                                <div class="vid2">
-                                    <video src="{{ asset('assets/images/dummy_video_test.mp4') }}" controls></video>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="sec3-body">
-                        <div class="row align-items-center">
-                            <div class="col-md-4">
-                                <div class="vid1">
-                                    <video src="{{ asset('assets/images/dummy_video_test.mp4') }}" controls></video>
-                                    <video src="{{ asset('assets/images/dummy_video_test.mp4') }}" controls></video>
-                                </div>
-                            </div>
-                            <div class="col-md-8">
-                                <div class="vid2">
-                                    <video src="{{ asset('assets/images/dummy_video_test.mp4') }}" controls></video>
-                                </div>
+                        <div class="col-md-6">
+                            <div class="vid-content-home">
+                                <h4>Lorem ipsum</h4>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae, molestias ea iure cumque dolorem expedita quas incidunt molestiae fugiat? Pariatur iure atque repellendus ad quasi quisquam totam minus perferendis excepturi?</p>
+                                <a href="{{ route('membership') }}#" class="vubtn">Watch More</a>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
             </div>
         </section>
     </section>

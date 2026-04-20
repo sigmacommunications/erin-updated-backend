@@ -45,24 +45,24 @@
             </div>
         </section>
         <section class="sec4">
-            <video class="program-sec4-bunny-vid" autoplay loop muted playsinline>
+            <video class="sec4-left-vid" autoplay loop muted playsinline>
                 <source src="{{ asset('assets/images/animation2.webm') }}" type="video/webm">
             </video>
             <div class="container">
                 <div class="sec4-head">
                     <h4 class="purple-head">Let's Do It The Smart Way</h4>
                     <h2 class="black-head">Early Childhood Learning Plans (Ages 3–6)</h2>
-                    <p>Designed for kids 3–6, our math and music learning programs include interactive math videos, music-based lessons, and downloadable activities. We design our learning plans to accommodate all types of learners and households.</p>
+                    <p>Designed for kids 3–6, our plans include interactive math and music videos for preschool and kindergarten, music-based lessons, and downloadable activities for kids. Our learning plans are designed to fit every kind of learner and every kind of household.</p>
                 </div>
                 <div class="packages">
                     <div class="package">
                         <a href="#">
                             <div class="pack-head">
-                                <img src="{{ asset('assets/images/program/package1.png') }}" alt="">
+                                <img src="{{ asset('assets/images/package1.png') }}" alt="">
                             </div>
                             <div class="pack-body">
                                 <h5>1. Monthly Subscription </h5>
-                                <p>Enjoy unlimited access to our full library of kindergarten math with music, songs, and printable activities. Perfect for families who want flexible learning without a long-term commitment.</p>
+                                <p>Enjoy unlimited access to our full library of math and music videos, songs, and printable activities. Perfect for families who want flexible learning without a long-term commitment.</p>
                                 <ul class="pack-ul">
                                     <li><i class="fa-solid fa-circle"></i> Per month: $7</li>
                                     <li><i class="fa-solid fa-user-group"></i> Cancel anytime</li>
@@ -73,14 +73,14 @@
                     <div class="package">
                         <a href="#">
                             <div class="pack-head">
-                                <img src="{{ asset('assets/images/program/package2.png') }}" alt="">
+                                <img src="{{ asset('assets/images/package2.png') }}" alt="">
                             </div>
                             <div class="pack-body">
                                 <h5>2. Yearly Subscription </h5>
                                 <p>Get the best value with a full year of unlimited access. This plan includes everything in the monthly subscription. Ideal for parents or educators committed to consistent, long-term early learning.</p>
                                 <ul class="pack-ul">
                                     <li><i class="fa-solid fa-circle"></i> Per year: $74.99</li>
-                                    <li><i class="fa-solid fa-user-group"></i>Savings over 10%</li>
+                                    <li><i class="fa-solid fa-user-group"></i> Savings over 10%</li>
                                 </ul>
                             </div>
                         </a>
@@ -88,11 +88,11 @@
                     <div class="package">
                         <a href="#">
                             <div class="pack-head">
-                                <img src="{{ asset('assets/images/program/package3.png') }}" alt="">
+                                <img src="{{ asset('assets/images/package3.png') }}" alt="">
                             </div>
                             <div class="pack-body">
                                 <h5>3. Single Activity Pack </h5>
-                                <p>Just getting started? Try one of our activity packs without subscribing. Each pack includes a learning video, downloadable math activities for kids, and MP3 math songs for children, perfect for quick learning at home or on the go.</p>
+                                <p>Just getting started? Try one of our activity packs without subscribing. Each pack includes a learning video, downloadable math and music activities for kids, and MP3 song for children, perfect for quick learning at home or on the go.</p>
                                 <ul class="pack-ul">
                                     <li><i class="fa-solid fa-circle"></i> Per Activity: $2.99</li>
                                     <li><i class="fa-solid fa-user-group"></i> One-Time Access</li>
@@ -100,34 +100,9 @@
                             </div>
                         </a>
                     </div>
-                    <div class="package">
-                        <a href="#">
-                            <div class="pack-head">
-                                <img src="{{ asset('assets/images/program/package4.png') }}" alt="">
-                            </div>
-                            <div class="pack-body">
-                                <h5>4. Family Bundle </h5>
-                                <p>Our upcoming Family Bundle will offer a discounted pack of multiple activities, great for families with more than one child or those who want to keep a variety of lessons on hand. More learning, more value, one easy download.</p>
-                                <ul class="pack-ul">
-                                    <li><i class="fa-solid fa-user-group"></i> All-in-one Family Plan</li>
-                                </ul>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="package">
-                        <a href="#">
-                            <div class="pack-head">
-                                <img src="{{ asset('assets/images/program/package5.png') }}" alt="">
-                            </div>
-                            <div class="pack-body">
-                                <h5>5. Classroom Plan </h5>
-                                <p>Designed for preschools, daycares, or homeschool groups, this plan offers group access, educator-friendly tools, and multi-user licensing. It’s the perfect way to bring music based math learning into a classroom setting.</p>
-                                <ul class="pack-ul">
-                                    <li><i class="fa-solid fa-user-group"></i> For Educators & Groups</li>
-                                </ul>
-                            </div>
-                        </a>
-                    </div>
+                </div>
+                <div class="sec4-bottom">
+                    <a href="{{ route('membership') }}" class="vubtn">See More</a>
                 </div>
             </div>
         </section>

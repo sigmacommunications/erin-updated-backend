@@ -42,10 +42,6 @@
 <body class="hold-transition dark-mode sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
     <div class="wrapper">
 
-        <!-- Preloader -->
-        <div class="preloader flex-column justify-content-center align-items-center">
-            <img class="animation__wobble w-50" src="{{ asset('assets/images/logo2.png') }}" alt="AdminLTELogo">
-        </div>
 
         @include('admin.layout.navbar')
 

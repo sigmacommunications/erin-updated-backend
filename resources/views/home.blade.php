@@ -48,37 +48,27 @@
     <section class="sec3">
         <div class="container">
             <div class="sec3-inner">
-                <video class="sec3-bunny-vid" autoplay loop muted playsinline>
-                    <source src="{{ asset('assets/images/animation1.webm') }}" type="video/webm">
-                </video>
+
                 <div class="sec3-head">
                     <div class="sec3-headings">
                         <h4 class="purple-head">The Ally Dog Depot Programs</h4>
                         <h2 class="black-head">A New Way of Learning</h2>
                     </div>
-
-                    <div class="sec3-btns">
-                        <a href="#" class="vubtn">Video Upload</a>
-                    </div>
-
                 </div>
                 <div class="sec3-body">
                     <div class="row align-items-center">
-                        <div class="col-md-4">
+                        <div class="col-md-6">
                             <div class="vid1">
-                                   <video
-                                    src="{{ asset('assets/images/dog-video.mp4') }}"
-                                    controls></video>
-                                 <video
+                                <video
                                     src="{{ asset('assets/images/dog-video.mp4') }}"
                                     controls></video>
                             </div>
                         </div>
-                        <div class="col-md-8">
-                            <div class="vid2">
-                                <video
-                                    src="{{ asset('assets/images/dog-video.mp4') }}"
-                                    controls></video>
+                        <div class="col-md-6">
+                            <div class="vid-content-home">
+                                <h4>Lorem ipsum</h4>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae, molestias ea iure cumque dolorem expedita quas incidunt molestiae fugiat? Pariatur iure atque repellendus ad quasi quisquam totam minus perferendis excepturi?</p>
+                                <a href="{{ route('membership') }}#" class="vubtn">Watch More</a>
                             </div>
                         </div>
                     </div>
@@ -87,6 +77,9 @@
         </div>
     </section>
     <section class="sec4">
+        <video class="sec4-left-vid" autoplay loop muted playsinline>
+            <source src="{{ asset('assets/images/animation2.webm') }}" type="video/webm">
+        </video>
         <div class="container">
             <div class="sec4-head">
                 <h4 class="purple-head">Let's Do It The Smart Way</h4>
@@ -139,34 +132,9 @@
                         </div>
                     </a>
                 </div>
-                <div class="package">
-                    <a href="#">
-                        <div class="pack-head">
-                            <img src="{{ asset('assets/images/package4.png') }}" alt="">
-                        </div>
-                        <div class="pack-body">
-                            <h5>4. Family Bundle </h5>
-                            <p>Our upcoming Family Bundle will offer a discounted pack of multiple activities, great for families with more than one child or those who want to keep a variety of lessons on hand. More learning, more value, one easy download.</p>
-                            <ul class="pack-ul">
-                                <li><i class="fa-solid fa-user-group"></i> All-in-one Family Plan</li>
-                            </ul>
-                        </div>
-                    </a>
-                </div>
-                <div class="package">
-                    <a href="#">
-                        <div class="pack-head">
-                            <img src="{{ asset('assets/images/package5.png') }}" alt="">
-                        </div>
-                        <div class="pack-body">
-                            <h5>5. Classroom Plan </h5>
-                            <p>Designed for preschools, daycares, or homeschool groups, this plan offers group access, educator-friendly tools, and multi-user licensing. It’s the perfect way to bring music based math learning into a classroom setting.</p>
-                            <ul class="pack-ul">
-                                <li><i class="fa-solid fa-user-group"></i> For Educators & Groups</li>
-                            </ul>
-                        </div>
-                    </a>
-                </div>
+            </div>
+            <div class="sec4-bottom">
+                <a href="{{ route('membership') }}" class="vubtn">See More</a>
             </div>
         </div>
     </section>
@@ -184,27 +152,6 @@
                 </div>
             </div>
             <div class="row align-items-center">
-                <div class="col-md-4">
-                    <div class="sec5-vids">
-                        <video
-                             src="{{ asset('assets/images/dog-video.mp4') }}"
-                            controls></video>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="sec5-vids">
-                        <video
-                             src="{{ asset('assets/images/dog-video.mp4') }}"
-                            controls></video>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="sec5-vids">
-                        <video
-                             src="{{ asset('assets/images/dog-video.mp4') }}"
-                            controls></video>
-                    </div>
-                </div>
                 <div class="col-md-4">
                     <div class="sec5-vids">
                         <video
