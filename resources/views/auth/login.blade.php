@@ -1,4 +1,20 @@
 <x-guest-layout>
+    <style>
+        input[type="email"],
+        input[type="password"] {
+            color: #1f2937 !important;
+        }
+        input[type="email"]::-webkit-input-placeholder,
+        input[type="password"]::-webkit-input-placeholder {
+            color: #6b7280 !important;
+            opacity: 1 !important;
+        }
+        input[type="email"]::placeholder,
+        input[type="password"]::placeholder {
+            color: #6b7280 !important;
+            opacity: 1 !important;
+        }
+    </style>
     <div class="mb-6 text-center">
         <h1 class="text-2xl font-semibold text-gray-900">{{ __('Welcome back') }}</h1>
         <p class="mt-1 text-sm text-gray-600">{{ __('Sign in to your account') }}</p>
@@ -51,4 +67,10 @@
         {{ __('Don\'t have an account?') }}
         <a href="{{ route('register') }}" class="font-medium text-indigo-600 hover:text-indigo-700">{{ __('Sign up') }}</a>
     </p>
+
+    <div class="mt-4 text-center">
+        <a href="{{ route('home') }}" style="display: inline-block; color: white; text-decoration: none; background-color: #D95F80; padding: 15px 30px; border-radius: 50px; border: 1px solid #D95F80; font-size: 12px; transition: 0.3s;" onmouseover="this.style.color='black';this.style.backgroundColor='transparent';" onmouseout="this.style.color='white';this.style.backgroundColor='#D95F80';">
+            {{ __('Back to Home') }}
+        </a>
+    </div>
 </x-guest-layout>

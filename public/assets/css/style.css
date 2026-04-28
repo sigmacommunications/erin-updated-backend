@@ -40,11 +40,10 @@ body {
     width: 100%;
 }
 
-.header .nav-item.dropdown:hover .dropdown-menu {
+/* .header .nav-item.dropdown:hover .dropdown-menu {
     display: block;
     margin-top: 0;
-    /* removes jump */
-}
+} */
 
 .list {
     color: black;
@@ -2201,4 +2200,12 @@ body {
         background-size: contain;
         background-repeat: no-repeat;
     }*/
+}
+
+.nav-item.dropdown:hover > .dropdown-menu {
+    display: none !important;
+}
+
+.nav-item.dropdown .dropdown-menu.show {
+    display: block !important;
 }

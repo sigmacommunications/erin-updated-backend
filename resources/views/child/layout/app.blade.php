@@ -42,7 +42,7 @@
     <div class="flex min-h-screen p-2">
         <!-- SIDEBAR -->
         <div id="sideBar"
-            class="w-64 h-min-screen bg-[linear-gradient(90deg,#88E7EA_0%,#29A7BE_100%)] text-white rounded-r-[70px] rounded-3xl py-6 absolute left-0 transform -translate-x-full transition-transform duration-300 sm:relative sm:translate-x-0 z-40 flex flex-col justify-between">
+            class="w-64 h-screen bg-[linear-gradient(90deg,#88E7EA_0%,#29A7BE_100%)] text-white rounded-r-[70px] rounded-3xl py-4 absolute left-0 transform -translate-x-full transition-transform duration-300 sm:relative sm:translate-x-0 z-40 flex flex-col justify-between overflow-hidden">
             <div>
                 <div class="flex flex-row items-center justify-between mb-6 px-6">
                     <img src="{{ asset('assets/images/logo2.png') }}" class="w-36" alt="Logo" style="opacity: .8">
@@ -51,15 +51,15 @@
                     </button>
                 </div>
 
-                <p class="text-md font-semibold mb-2 px-6">LEARNING</p>
-                <ul class="flex flex-col text-md">
-                    <li class="px-6 py-2 flex gap-2 items-center hover:bg-white/20 hover:backdrop-blur-sm">
+                <p class="text-sm font-semibold mb-1 px-6">LEARNING</p>
+                <ul class="flex flex-col text-sm">
+                    <li class="px-6 py-1 flex gap-2 items-center hover:bg-white/20 hover:backdrop-blur-sm">
                         <a href="{{ route('parent.children.dashboard', session('active_child_id', 1)) }}" class="flex gap-2 items-center">
                             <img src="{{ asset('assets/dashboard/images/icon1.png') }}" class="w-4 h-4 object-cover" alt="">
                             Courses
                         </a>
                     </li>
-                    <li class="px-6 py-2 flex gap-2 items-center hover:bg-white/20 hover:backdrop-blur-sm">
+                    <li class="px-6 py-1 flex gap-2 items-center hover:bg-white/20 hover:backdrop-blur-sm">
                         <a href="{{ route('parent.children.analytics.overall') }}" class="flex gap-2 items-center">
                             <img src="{{ asset('assets/dashboard/images/icon5.png') }}" class="w-4 h-4 object-cover" alt="">
                             Progress
@@ -68,10 +68,10 @@
                 </ul>
             </div>
             <div>
-                <p class="text-md font-semibold mb-2 px-6 mt-6">SYSTEM</p>
-                <ul class="flex flex-col text-md px-3">
+                <p class="text-sm font-semibold mb-1 px-6 mt-4">SYSTEM</p>
+                <ul class="flex flex-col text-sm px-3">
                     <li
-                        class="px-3 py-2 flex gap-2 items-center hover:bg-white/20 hover:backdrop-blur-sm rounded-full border border-transparent hover:border-white">
+                        class="px-3 py-1 flex gap-2 items-center hover:bg-white/20 hover:backdrop-blur-sm rounded-full border border-transparent hover:border-white">
                         <a href="{{ route('parent.children.exit') }}" class="flex gap-2 items-center">
                             <img src="{{ asset('assets/dashboard/images/icon14.png') }}" class="w-4 h-4 object-cover" alt="">
                             Exit to Parent

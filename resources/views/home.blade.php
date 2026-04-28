@@ -60,14 +60,14 @@
                         <div class="col-md-6">
                             <div class="vid1">
                                 <video
-                                    src="{{ asset('assets/images/dog-video.mp4') }}"
+                                    src="{{ asset('assets/images/video1.mp4') }}"
                                     controls></video>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="vid-content-home">
-                                <h4>Lorem ipsum</h4>
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae, molestias ea iure cumque dolorem expedita quas incidunt molestiae fugiat? Pariatur iure atque repellendus ad quasi quisquam totam minus perferendis excepturi?</p>
+                                <h4>A New Way of Learning</h4>
+                                <p>No drills, no screens stuck on repeat. Just music, movement, and storytelling that make math click. Every lesson builds real understanding—and real confidence. Kids actually ask for more. Parents and teachers see the difference. That’s learning that sounds like fun and feels like growth.</p>
                                 <a href="{{ route('membership') }}#" class="vubtn">Watch More</a>
                             </div>
                         </div>
@@ -155,21 +155,21 @@
                 <div class="col-md-4">
                     <div class="sec5-vids">
                         <video
-                             src="{{ asset('assets/images/dog-video.mp4') }}"
+                             src="{{ asset('assets/images/video2.mp4') }}"
                             controls></video>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="sec5-vids">
                         <video
-                             src="{{ asset('assets/images/dog-video.mp4') }}"
+                             src="{{ asset('assets/images/video3.mp4') }}"
                             controls></video>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="sec5-vids">
                         <video
-                             src="{{ asset('assets/images/dog-video.mp4') }}"
+                             src="{{ asset('assets/images/video4.mp4') }}"
                             controls></video>
                     </div>
                 </div>

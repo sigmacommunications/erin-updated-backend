@@ -13,6 +13,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+    <style>
+        /* Fix sidebar active link text color */
+        .nav-sidebar .nav-link.active p,
+        .nav-sidebar .nav-link.active i {
+            color: #000 !important;
+        }
+        .nav-sidebar .nav-treeview .nav-link.active p,
+        .nav-sidebar .nav-treeview .nav-link.active i {
+            color: #000 !important;
+        }
+    </style>
 </head>
 
 <body class="hold-transition dark-mode sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">

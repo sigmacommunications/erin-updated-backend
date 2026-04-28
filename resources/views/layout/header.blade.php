@@ -11,22 +11,23 @@
                       <div class="navbar">
                           <div class="nav-up">
                               <ul class="nav-ul">
-                                  <li><a class="list active" href="{{ route('home') }}">Home</a></li>
-                                  <li><a class="list" href="{{ route('program') }}">Program</a></li>
-                                  <li><a class="list" href="{{ route('blog') }}">News & Blog</a></li>
+                                  <li><a class="list {{ request()->routeIs('home') ? 'active' : '' }}" href="{{ route('home') }}">Home</a></li>
+                                  <li><a class="list {{ request()->routeIs('program') ? 'active' : '' }}" href="{{ route('program') }}">Program</a></li>
+                                  <li><a class="list {{ request()->routeIs('blog') ? 'active' : '' }}" href="{{ route('blog') }}">News & Blog</a></li>
 								  <li class="nav-item dropdown">
-									  <a class="nav-link dropdown-toggle list" href="{{ route('about') }}" id="navbarDropdown">
+									  <a class="nav-link dropdown-toggle list {{ request()->routeIs('about') || request()->routeIs('contact') ? 'active' : '' }}" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 										About Us
 									  </a>
-									  <ul class="dropdown-menu">
-										<li><a class="dropdown-item" href="{{ route('contact') }}">Contact Us</a></li>
+									  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item {{ request()->routeIs('about') ? 'active' : '' }}" href="{{ route('about') }}">About Us</a></li>
+										<li><a class="dropdown-item {{ request()->routeIs('contact') ? 'active' : '' }}" href="{{ route('contact') }}">Contact Us</a></li>
 									  </ul>
 									</li>
-                                  <li><a class="list" href="{{ route('membership') }}">Membership Options</a></li>
+                                  <li><a class="list {{ request()->routeIs('membership') ? 'active' : '' }}" href="{{ route('membership') }}">Membership Options</a></li>
                                   {{-- @auth
-                                      <li><a class="list" href="{{ route('video-library.index') }}">Video Library</a></li>
+                                      <li><a class="list {{ request()->routeIs('video-library.index') ? 'active' : '' }}" href="{{ route('video-library.index') }}">Video Library</a></li>
                                   @endauth --}}
-                                  <li><a class="list" href="{{ route('lesson') }}">Quick Lessons</a></li>
+                                  <li><a class="list {{ request()->routeIs('lesson') ? 'active' : '' }}" href="{{ route('lesson') }}">Quick Lessons</a></li>
                               </ul>
                           </div>
                       </div>
@@ -59,16 +60,23 @@
                               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                   <div class="nav-up">
                               <ul class="nav-ul">
-                                  <li><a class="list active" href="{{ route('home') }}">Home</a></li>
-                                  <li><a class="list" href="{{ route('program') }}">Program</a></li>
-                                  <li><a class="list" href="{{ route('blog') }}">News & Blog</a></li>
-                                  <li><a class="list" href="{{ route('about') }}">About Us</a></li>
-                                  <li><a class="list" href="{{ route('contact') }}">Contact Us</a></li>
-                                  <li><a class="list" href="{{ route('membership') }}">Membership Options</a></li>
+                                  <li><a class="list {{ request()->routeIs('home') ? 'active' : '' }}" href="{{ route('home') }}">Home</a></li>
+                                  <li><a class="list {{ request()->routeIs('program') ? 'active' : '' }}" href="{{ route('program') }}">Program</a></li>
+                                  <li><a class="list {{ request()->routeIs('blog') ? 'active' : '' }}" href="{{ route('blog') }}">News & Blog</a></li>
+                                  <li class="nav-item dropdown">
+                                      <a class="nav-link dropdown-toggle list {{ request()->routeIs('about') || request()->routeIs('contact') ? 'active' : '' }}" href="#" id="navbarOffcanvasDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                          About Us
+                                      </a>
+                                      <ul class="dropdown-menu" aria-labelledby="navbarOffcanvasDropdown">
+                                          <li><a class="dropdown-item {{ request()->routeIs('about') ? 'active' : '' }}" href="{{ route('about') }}">About Us</a></li>
+                                          <li><a class="dropdown-item {{ request()->routeIs('contact') ? 'active' : '' }}" href="{{ route('contact') }}">Contact Us</a></li>
+                                      </ul>
+                                  </li>
+                                  <li><a class="list {{ request()->routeIs('membership') ? 'active' : '' }}" href="{{ route('membership') }}">Membership Options</a></li>
                                   {{-- @auth
-                                      <li><a class="list" href="{{ route('video-library.index') }}">Video Library</a></li>
+                                      <li><a class="list {{ request()->routeIs('video-library.index') ? 'active' : '' }}" href="{{ route('video-library.index') }}">Video Library</a></li>
                                   @endauth --}}
-                                  <li><a class="list" href="{{ route('lesson') }}">Quick Lessons</a></li>
+                                  <li><a class="list {{ request()->routeIs('lesson') ? 'active' : '' }}" href="{{ route('lesson') }}">Quick Lessons</a></li>
                               </ul>
                           </div>
                           <div class="loginbtns mt-3">
